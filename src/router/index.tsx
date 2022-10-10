@@ -18,8 +18,12 @@ interface IRoute {
 
 const config: IRoute[] = [
   {
+    path: 'login',
+    element: lazy(() => import('src/pages/login'))
+  },
+  {
     path: '/',
-    navigate: '/testB'
+    navigate: '/login'
   },
   {
     path: 'testA',
@@ -68,5 +72,6 @@ function formatRouter(config: IRoute[]) {
 }
 
 function checkAuth() {
-  return !!sessionStorage.getItem('token');
+  return true
+  // return !!sessionStorage.getItem('token');
 }

@@ -1,0 +1,17 @@
+@import "reset.css";
+@import "font-size.css";
+@import "rem";
+@import "ant-mobile.css";
+@import "common";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background: #fff;
+  @include px2rem(font-size, 28px);
+  color: $color-text-main;
+}

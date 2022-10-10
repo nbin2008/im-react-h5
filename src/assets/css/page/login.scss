@@ -1,0 +1,16 @@
+
+.page-login {
+  min-height: 100%;
+  background: #f8f8f8;
+  .login-bg {
+    height: 4.12rem;
+    background: url("~src/assets/img/login-bg.png");
+    background-size: cover;
+  }
+  .tab-box {
+    width: 6rem;
+    height: .8rem;
+    margin: -.4rem auto 0;
+    background: #fff;
+  }
+}
